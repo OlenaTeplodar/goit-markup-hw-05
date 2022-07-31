@@ -140,6 +140,7 @@ border-bottom: 1px solid var(--border-header);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-header {
@@ -154,6 +155,7 @@ border-bottom: 1px solid var(--border-header);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .contact-header-link:not(:last-child) {
@@ -215,6 +217,7 @@ font-weight: 900;
   color: var(--title-text-color-dark-bkg);
   background-color: var(--title-text-color-accent);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -273,6 +276,24 @@ padding-top: 0;
 
 .activities-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.activites-card {
+  position: relative;
+}
+.activiyies-card-description {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+line-height: 1.14;
+text-align: center;
+text-transform: uppercase;
+color: var(--title-text-color-dark-bkg);
+background-color: rgba(47, 48, 58, 0.8);
 }
 /* -----------------TEAM ---------------------*/
 
@@ -335,6 +356,7 @@ text-align: center;
   border-radius: 50%;
   background-color: var(--white-color);
   color: var(--icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -366,6 +388,7 @@ text-align: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: var(--icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .client-link:hover,
@@ -408,6 +431,7 @@ color: var(--title-text-color-accent);
 .adress {
   line-height: 1.71;
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -424,6 +448,7 @@ color: var(--title-text-color-accent);
   font-style: normal;
   line-height: 1.71;
   color: var(--text-color-dark-bkg);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -459,6 +484,7 @@ color: var(--title-text-color-dark-bkg);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
@@ -491,7 +517,7 @@ color: var(--title-text-color-dark-bkg);
   background-color: var(--light-dark-background);
   padding: 6px 22px;
   box-shadow: none;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -510,6 +536,9 @@ color: var(--title-text-color-dark-bkg);
     gap: 30px;
 }
 
+.card-item-link {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .card-item-link:hover,
 .card-item-link:focus {
   display: block;
