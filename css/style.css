@@ -578,6 +578,13 @@ color: var(--title-text-color-dark-bkg);
 
 
 .filter-btn {
+      display: block;
+  margin: 30px auto 0;
+  padding: 10px 32px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -587,7 +594,7 @@ color: var(--title-text-color-dark-bkg);
   background-color: var(--light-dark-background);
   padding: 6px 22px;
   box-shadow: none;
-  transition: background-color var(--transition-dur-func), color 2var(--transition-dur-func), box-shadow var(--transition-dur-func), text-shadow var(--transition-dur-func);
+  transition: background-color var(--transition-dur-func), color var(--transition-dur-func), box-shadow var(--transition-dur-func), text-shadow var(--transition-dur-func);
 }
 
 .filter-btn:hover,
